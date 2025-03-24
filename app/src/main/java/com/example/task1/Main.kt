@@ -9,9 +9,9 @@ fun main() {
         Book(5, true, "Свинка Пеппа", 52, "Григорий Пушкин")
     )
     val newspapers = listOf(
-        Newspaper(6, false, "Новостной вихрь", 800),
-        Newspaper(7, true, "Городские сплетни", 355),
-        Newspaper(8, false, "Умные перья", 55)
+        Newspaper(6, false, "Новостной вихрь", 800, 8),
+        Newspaper(7, true, "Городские сплетни", 355, 4),
+        Newspaper(8, false, "Умные перья", 55, 10)
 
     )
     val discs = listOf(
@@ -21,6 +21,8 @@ fun main() {
         Disc(12, true, "Гордость и предубеждение", "CD")
     )
 
-    val libraryManager = LibraryManager(books, newspapers, discs)
+    val Manager = manager()
+    val Digitizer = digitize()
+    val libraryManager = LibraryManager(books, newspapers, discs, Manager, Digitizer)
     libraryManager.start()
 }

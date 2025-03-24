@@ -10,3 +10,4 @@ class Disc(
         return "$discType $name доступен: ${if (isAvailable()) "Да" else "Нет"}"
     }
 }
+
